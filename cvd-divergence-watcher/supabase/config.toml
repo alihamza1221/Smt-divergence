@@ -1,0 +1,4 @@
+project_id = "rfkjubgemjzsfrlvtlnh"
+
+[functions.cvd-alerts]
+verify_jwt = false
