@@ -5,9 +5,9 @@ require('dotenv').config();
 const app = express();
 const PORT = process.env.PORT || 3001;
 
-// Telegram configuration (mutable - can be updated via API)
-let telegramBotToken = process.env.TELEGRAM_BOT_TOKEN || '';
-let telegramChatId = process.env.TELEGRAM_CHAT_ID || '';
+// Telegram configuration (set only via frontend API)
+let telegramBotToken = '';
+let telegramChatId = '';
 
 // TradingView webhook secret (optional - for security)
 const WEBHOOK_SECRET = process.env.WEBHOOK_SECRET || '';
